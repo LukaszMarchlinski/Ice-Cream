@@ -9,8 +9,7 @@
   transition: 0.5s;
   transition-timing-function: ease-out;
   z-index: 10;
-  align-items: center; /* Centering modal vertically */
-  justify-content: center; /* Centering modal horizontally */
+  
   
 }
 
@@ -21,22 +20,20 @@
 }
 
 .modal {
-  width: 90%; /* Adjust to fit smaller screens */
-  max-width: 450px; /* Maximum width for larger screens */
-  height: 90%; /* Adjust height to fit smaller screens */
-  max-height: 500px; /* Maximum height for larger screens */
-  overflow-y: auto; /* Enable vertical scrolling */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-  position: relative;
+  width: 370px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  padding: 20px; /* Optional padding for content */
 }
 
 .modal__button--close {
   position: absolute;
-  margin: auto;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -198,8 +195,7 @@
   .modal {
     width: 450px;
     height: 480px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    overflow-y: auto; /* Przewijanie w osi Y */
   }
   .modal .form__title {
     font-size: 16px;
