@@ -9,6 +9,8 @@
   transition: 0.5s;
   transition-timing-function: ease-out;
   z-index: 10;
+  align-items: center; /* Centering modal vertically */
+  justify-content: center; /* Centering modal horizontally */
   
 }
 
@@ -29,6 +31,8 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
 
 .modal__button--close {
@@ -194,8 +198,8 @@
   .modal {
     width: 450px;
     height: 480px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflow-y: auto; /* Enable vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
   }
   .modal .form__title {
     font-size: 16px;
