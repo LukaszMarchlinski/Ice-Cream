@@ -37,6 +37,8 @@
   right: 8px;
   width: 30px;
   height: 30px;
+  justify-content: center;
+  align-items: center;
   background-color: #D41442;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -191,6 +193,7 @@
   .modal {
     width: 450px;
     height: 480px;
+    overflow-y: scroll;
   }
   .modal .form__title {
     font-size: 16px;
@@ -230,6 +233,7 @@
   .modal {
     width: 528px;
     height: 600px;
+    overflow-y: auto;
   }
 
   .form {
