@@ -51,7 +51,9 @@
 .modal__button--close-ico {
   width: 17px;
   height: 17px;
+  display: flex;
   align-items: center;
+  position: absolute;
   justify-content: center;
   margin: auto;
   fill: white;

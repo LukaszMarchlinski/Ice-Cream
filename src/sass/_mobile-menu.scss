@@ -1,26 +1,25 @@
 .mobile__menu-container {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0; /* Przesuwamy od prawej krawędzi */
   width: 250px;
-  height: 502px;
+  height: 100vh; /* Ustaw pełną wysokość okna przeglądarki */
   background: #e17992;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
-
-  transform: translateX(101vw);
+  transform: translateX(100%); /* Ukrywamy menu poza ekranem z prawej strony */
   transition: transform 250ms ease-in-out;
   z-index: 5;
 }
 
 .mobile__menu-container.is-open {
-  transform: translateX(calc(101vw - 250px));
+  transform: translateX(0); /* Menu w pełni widoczne */
 }
 
 .mobile__button {
   position: absolute;
   top: 15px;
-  right: 20px;
+  left: 15px; /* Ustaw przycisk zamknięcia od lewej krawędzi */
   background-color: transparent;
   border: none;
   padding: 0;
@@ -29,7 +28,6 @@
 .mobile__button-icon {
   width: 40px;
   height: 40px;
-  
 }
 
 .mobile__menu-navigation {
@@ -68,7 +66,6 @@
   color: var(--red-color);
   border: none;
   border-radius: 22px;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
@@ -76,10 +73,11 @@
     background: #ECEBEB;
   }
 }
+
 .nav__icon {
   margin-left: 10px;
-display: inline-flex;
-align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 .mobile__close-icon {
@@ -89,19 +87,18 @@ align-items: center;
   height: 14px;
   fill: white;
   top: 10px;
-  right: 18px;
+  left: 20px; /* Ustaw ikonę zamknięcia od lewej krawędzi */
 }
 
 @media screen and (min-width: 768px) {
   .mobile__menu-container {
     width: 254px;
-    height: 1020px;
-    transform: translateX(101vw);
-    
+    height: 100vh; /* Ustaw pełną wysokość okna przeglądarki */
+    transform: translateX(100%); /* Ukrywamy menu poza ekranem z prawej strony */
   }
 
   .mobile__menu-container.is-open {
-    transform: translateX(calc(101vw - 254px));
+    transform: translateX(0); /* Menu w pełni widoczne */
   }
 
   .nav__btn-mobile {
