@@ -1,15 +1,16 @@
 .mobile__menu-container {
   position: fixed;
   top: 0;
-  right: 0; /* Przesuwamy od prawej krawędzi */
+  right: 0;
   width: 250px;
-  height: 100vh; /* Ustaw pełną wysokość okna przeglądarki */
+  height: 100vh; 
   background: #e17992;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
   transform: translateX(100%); /* Ukrywamy menu poza ekranem z prawej strony */
   transition: transform 250ms ease-in-out;
   z-index: 5;
+  overflow-y: auto;
 }
 
 .mobile__menu-container.is-open {
@@ -87,7 +88,7 @@
   height: 14px;
   fill: white;
   top: 10px;
-  left: 20px; /* Ustaw ikonę zamknięcia od lewej krawędzi */
+  left: 200px; /* Ustaw ikonę zamknięcia od prawej krawędzi */
 }
 
 @media screen and (min-width: 768px) {
