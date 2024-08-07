@@ -54,6 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
   fill: white;
   padding: 2px;
 
@@ -194,6 +195,7 @@
     width: 450px;
     height: 480px;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   .modal .form__title {
     font-size: 16px;
