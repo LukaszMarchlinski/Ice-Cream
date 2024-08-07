@@ -1,0 +1,193 @@
+.contacts {
+  padding-bottom: 30px;
+  margin-top: 200px;
+  background-color: #FFF5F6;
+  &__hidden {
+    visibility: hidden;
+  }
+  &__container {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: auto;
+    margin-top: -120px;
+  }
+
+  &__form {
+    width: 280px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 43px 20px 43px 20px;
+    margin-bottom: 20px;
+    background-color: var(--white-color);
+  }
+  &__form > &__fieldset {
+    border-bottom: 1px solid var(--gray-color);
+    width: 90%;
+    padding-bottom: 25px;
+  }
+  &__form > &__fieldset:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  &__fieldset {
+    border-style: none;
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  &__label {
+    line-height: 1.86;
+    width: 100vw;
+    color: var(--text-color);
+  }
+  &__block {
+    padding: 2px 15px 2px 15px;
+    margin-left: 9px;
+    width: min-content;
+    white-space: nowrap;
+    border-radius: 4px;
+    color: var(--white-color);
+    text-align: center;
+    align-content: center;
+  }
+  &__cafe {
+    background-color: var(--orange-color);
+  }
+  &__food-truck {
+    background-color: var(--green-color);
+  }
+  &__opening-hours {
+    color: var(--text);
+    line-height: 1.86;
+    margin-bottom: 10px;
+    margin-top: 3px;
+  
+}
+&__locations-icoL,
+&__locations-icoR {
+margin-left: 10px;
+display: inline-flex;
+align-items: center;
+}
+  &__locations-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 161px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color:#D41442;
+    color: var(--white-color);
+    border: none;
+    border-radius: 22px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      background: #ba1139;
+    }
+  }
+  &__franchise-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 161px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: white;
+    color: var(--red-color);
+    border: none;
+    border-radius: 22px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      background: #ECEBEB;
+    }
+  }
+  &__btn {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    margin-top: 125px;
+    padding-bottom: 165px;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 700px;
+      margin: auto;
+    
+    }
+    &__form {
+      width: 220px;
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 15px;
+      margin-top: 81px;
+      justify-content: center;
+    }
+    &__locations-btn {
+      margin-bottom: 0;
+      width: 191px;
+      width: 161px;
+      height: 44px;
+    }
+    &__franchise-btn {
+      width: 174px;
+      width: 161px;
+      height: 44px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .contacts {
+    &__container {
+      width: 1050px;
+      margin-top:-150px;
+    }
+    &__form {
+      width: 330px;
+      height: 572px;
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    
+    &__block {
+      margin-bottom: 32px;
+    }
+    &__opening-overs {
+      margin-bottom: 15px;
+    }
+    &__btn {
+      margin-top: 86px;
+    }
+    &__locations-btn {
+      width: 198px;
+    }
+    &__franchise-btn {
+      width: 180px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.galleryp {
+    display: flex;
+    background-color: #FFF5F6;
+    height: 155px; /* Automatyczna wysokość dla kontenera */
+    width: auto;
+    justify-content: center; /* Wyśrodkowuje dzieci w poziomie */
+}
+
+.galleryp-pictures-reviews {
+    background-size: contain; /* Dopasowuje obraz do kontenera */
+    background-position: center; /* Wyśrodkowuje obraz w kontenerze */
+    background-repeat: no-repeat; /* Nie powtarza obrazu */    
+    background-image: url("../images/reviews/mobile-collage.png");
+    width: 340px;
+    height: 144px;
+    margin-top: 97px;
+}
+@media (min-width: 380px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .galleryp-pictures-reviewsr {
+    background-image: url("../images/reviews/mobile-collage@2x.png");
+  }
+}
+
+
+@media (min-width: 768px) {
+  .galleryp {
+    height: 260px;
+}
+    .galleryp-pictures-reviews {
+        background-image: url("../images/reviews/tablet-collage.png");
+        width: 706px;
+        height: 298px;
+        margin-top: 140px;
+    }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+    .galleryp-pictures-reviews {
+    background-image: url("../images/reviews/tablet-collage@2x.png");
+  }
+}
+
+@media (min-width: 1280px) {
+    .galleryp-pictures-reviews {
+        background-image: url("../images/reviews/desktop-collage.png");
+        width: 1050px; /* Szerokość dla dużych ekranów */
+        height: 444px;
+        margin-top: 150px;
+       
+    }
+}
+@media (min-width: 1280px) and (min-device-pixel-ratio: 2),
+(min-width: 1280px) and (min-resolution: 192dpi),
+(min-width: 1280px) and (min-resolution: 2dppx) {
+    .galleryp-pictures-reviews {
+    background-image: url("../images/reviews/desktop-collage@2x.png");
+  }
+}

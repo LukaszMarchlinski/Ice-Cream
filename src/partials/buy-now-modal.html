@@ -1,0 +1,41 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__button--close" data-modal-close>
+      <svg class="modal__button--close-ico" width="17px" height="17px">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="form">
+      <h3 class="form__title">Leave your details and we'll call you back with an offer!</h3>
+      <fieldset class="form__fieldset">
+        <label for="name" class="form__label">Name</label>
+        <input class="form__input" type="text" id="name" required/>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label for="tel" class="form__label">Phone number</label>
+        <input class="form__input"  type="tel" 
+        pattern="[0-9]{9}" type="phone_number" required/>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label for="e-mail" class="form__label">Email</label>
+        <input class="form__input" type="email" name="email" required/>
+      </fieldset>
+      <fieldset class="form__fieldset-message">
+        <label for="text" class="form__label">Message</label>
+        <textarea type="text" class="form__input-message" name="text" required rows="5"></textarea>
+      </fieldset>
+      <label class="form__statute">
+        <input class="form__statute-box" type="checkbox" id="legal" required/>
+        <span class="form__checkmark">
+            <svg class="form__ico-checkpox">
+                <use href="./images/sprite.svg#icon-Vector-3"></use></svg>
+        </span>
+      <span class="form__stat-text">I accept the&nbsp;
+        <a class="form__stat-text-web" href="">Privacy notice&nbsp;</a>
+        <a class="form__stat-text-2" href="">and&nbsp;</a>
+        <a class="form__stat-text-web" href="">Terms of use.</a></span>
+    </label>
+      <button class="form__button--send" type="submit" name="button">Send</button>
+    </form>
+  </div>
+</div>

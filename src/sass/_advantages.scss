@@ -1,0 +1,128 @@
+.advantages {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 340px;
+  position: relative;
+  display: flex;
+  padding-top: 40px;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--background-pink-color);
+}
+.advantages {
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.advantages {
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container  {
+    width: 1050px;
+    justify-content: center;
+  }
+}
+.advantages-icon {
+  margin-bottom: 16px;
+}
+
+.advantages-list-item-number {
+  margin-bottom: 15px;
+
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--red-color);
+}
+
+.advantages-list-item-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: var(--text-color);
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .advantages-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  .advantages-list {
+    display: flex;
+  }
+
+
+  .advantages-icon {
+    margin-bottom: 36px;
+  }
+
+  .advantages-list-item-number {
+    font-size: 48px;
+    line-height: 1.146;
+  }
+
+  .advantages-list-item-text {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages-title {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  
+  .advantages-list {
+    gap: 30px;
+  }
+  .advantages-list-item {
+    width: 330px;
+
+  }
+
+  .advantages-icon {
+    margin-bottom: 40px;
+  }
+
+  .advantages-list-item-number {
+    font-size: 58px;
+    line-height: 1.138;
+  }
+
+  .advantages-list-item-text {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
+}
