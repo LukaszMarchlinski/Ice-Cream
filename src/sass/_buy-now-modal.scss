@@ -9,7 +9,7 @@
   position: fixed;
   transition: 0.5s;
   transition-timing-function: ease-out;
-  z-index: 1000;
+  z-index: 10;
   
   
 }
@@ -195,9 +195,10 @@
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 480px;
-    height: 90%;
+    height: 90vh; /* Ustawia wysokość na 90% wysokości okna przeglądarki */
+    max-height: 480px; /* Maksymalna wysokość */
     overflow-y: auto; /* Przewijanie w osi Y */
+    position: relative; /* Ważne dla kontrolowania pozycji wewnętrznych elementów */
   }
   .modal .form__title {
     font-size: 16px;
