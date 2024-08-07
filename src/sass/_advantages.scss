@@ -40,7 +40,6 @@
 @media screen and (min-width: 1280px) {
   .container  {
     width: 1050px;
-    justify-content: center;
   }
 }
 .advantages-icon {
@@ -105,6 +104,9 @@
   
   .advantages-list {
     gap: 30px;
+    justify-content: center;
+    width: 1050px;
+    margin: auto;
   }
   .advantages-list-item {
     width: 330px;
