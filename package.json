@@ -2,21 +2,16 @@
   "name": "Ice-Cream",
   "version": "1.1.0",
   "description": "",
-  "main": "index.js",
   "homepage": "https://LukaszMarchlinski.github.io/Ice-Cream",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Ice-Cream/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
-  },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/migace/parcel-project-template-pl-main/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
