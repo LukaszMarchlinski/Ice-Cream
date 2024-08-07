@@ -49,7 +49,7 @@
 }
 
 .modal__button--close-ico {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -191,7 +191,7 @@
   .modal {
     width: 450px;
     height: 480px;
-    height: 70%;
+    height: 90%;
     overflow-y: auto; /* Przewijanie w osi Y */
   }
   .modal .form__title {
