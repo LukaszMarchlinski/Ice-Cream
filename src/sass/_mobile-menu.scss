@@ -10,7 +10,6 @@
   transform: translateX(100%); /* Ukrywamy menu poza ekranem z prawej strony */
   transition: transform 250ms ease-in-out;
   z-index: 5;
-  overflow-y: auto;
 }
 
 .mobile__menu-container.is-open {
@@ -97,15 +96,19 @@
     height: 100vh; /* Ustaw pełną wysokość okna przeglądarki */
     transform: translateX(100%); /* Ukrywamy menu poza ekranem z prawej strony */
   }
+  .mobile__menu-navigation {
+    margin-top: 40px;
+  }
+  
+.nav__btn-mobile {
+  display: none;
+}
 
   .mobile__menu-container.is-open {
     transform: translateX(0); /* Menu w pełni widoczne */
   }
 
-  .nav__btn-mobile {
-    width: 186px;
-    margin-left: 34px;
-  }
+  
 }
 
 @media screen and (min-width: 1280px) {

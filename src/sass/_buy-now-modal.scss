@@ -196,7 +196,7 @@
   .modal {
     width: 450px;
     height: 90vh; /* Ustawia wysokość na 90% wysokości okna przeglądarki */
-    max-height: 480px; /* Maksymalna wysokość */
+    max-height: 510px; /* Maksymalna wysokość */
     overflow-y: auto; /* Przewijanie w osi Y */
     position: relative; /* Ważne dla kontrolowania pozycji wewnętrznych elementów */
   }
@@ -226,6 +226,7 @@
         height: 40px;
         font-size: 14px;
         margin-top: 15px;
+        margin-bottom: 15px;
   }
 }
 
@@ -237,8 +238,9 @@
   }
   .modal {
     width: 528px;
-    height: 600px;
+    height: 590px;
     overflow-y: auto;
+    max-height: 100%; /* Maksymalna wysokość */
   }
 
   .form {
@@ -284,6 +286,7 @@
       height: 50px;
       font-size: 16px;
       margin-top: 30px;
+      margin-bottom: 30px;
 }
   }
 
